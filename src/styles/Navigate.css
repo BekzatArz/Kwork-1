@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700');
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    height: 30px;
+    position: relative ;
+    font-family: 'Open Sans Condensed', sans-serif;
+
+}
+nav a {
+    color: black;
+}
+.navbar1 {
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    right: 37%;
+}
+.navbar a {
+    padding: 10px 15px;
+
+}
+
+.logo {
+  display: flex;
+}
+.logosContain {
+    margin-right: 100px;
+    position: absolute;
+    left: 10px;
+    letter-spacing: .5px;
+}
+.logosContain a {
+    font-size: 28px;
+    
+}
+.sign-in {
+    display: flex;
+    gap: 20px; 
+    margin-left: 100px;
+    position: absolute;
+    margin-right: 20px;
+    right: 10px;
+}
+
+.sign-in a {
+    position: relative;
+    font-size: 22px;
+    transition: .1s;
+    color: #999999;
+    overflow: hidden;
+    z-index: 1; 
+}
+
+.sign-in a:hover {
+    scale: 103%;
+    color: black;
+    transition: .3s;
+}
+
+.navbar{
+  padding: 80px 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.navbar ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.navbar li{
+  display: inline-block;
+  margin: 0 15px;
+}
+.navbar a{
+  font-size: 19px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #999999;
+  display: block;
+  position: relative;
+  padding: 4px 0;
+}
+.navbar a:hover {
+    color: #000000;
+}
+.navbar a::before{
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  transition: 0.5s transform ease;
+  transform: scale3d(0,1,1);
+  transform-origin: 0 50%;
+}
+.navbar a:hover::before{
+  transform: scale3d(1,1,1);
+}
+.navbar a::before{
+    background: #000000;
+    transform-origin: 100% 50%;
+}
+.navbar a:hover::before{
+  transform-origin: 0 50%;
+}
+
+.active a {
+    color: #000000;
+}
+

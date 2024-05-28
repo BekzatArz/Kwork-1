@@ -1,0 +1,20 @@
+header {
+    padding: 20px;
+    /* background-color: rgba(22, 22, 22, 1); */
+    /* border-bottom: 3px solid white; */
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;    
+    position: fixed;
+    width: 100%;
+}
+.header-back {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: -10;
+    user-select: none; /* Prevents text selection */
+    -webkit-user-drag: none; /* Prevents image drag in Safari and Chrome */
+    -moz-user-select: none; /* Prevents image drag in Firefox */
+    -ms-user-select: none; 
+}

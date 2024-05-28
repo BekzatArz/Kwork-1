@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #FFE500;
+    font-size: 18px;
+    font-family: Inter;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.container {
+    margin-top: 100px;
+    max-width: 99vw;
+    margin: 0 auto;
+    color: rgb(0, 0, 0);
+    margin-top: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+button {
+
+}
