@@ -1,10 +1,10 @@
-import { Link } from 'react-router-dom'
-import '../../styles/Footer/Footer.css'
+import { Link } from 'react-router-dom';
+import '../../styles/Footer/Footer.css';
 
-import skype from '../../assets/skype.svg'
-import telegram from '../../assets/telegram.svg'
-import linkedIn from '../../assets/linkedIn.svg'
-import email from '../../assets/email.svg'
+import skype from '../../assets/skype.svg';
+import telegram from '../../assets/telegram.svg';
+import linkedIn from '../../assets/linkedIn.svg';
+import email from '../../assets/email.svg';
 
 const Footer = () => {
   return (
@@ -51,4 +51,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Footer;

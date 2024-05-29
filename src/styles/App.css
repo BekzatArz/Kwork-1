@@ -4,6 +4,7 @@ header {
     /* border-bottom: 3px solid white; */
     background-repeat: no-repeat;
     display: flex;
+    z-index: 10;
     align-items: center;    
     position: fixed;
     width: 100%;
@@ -12,9 +13,26 @@ header {
     position: absolute;
     left: 0;
     width: 100%;
+    height: max-content;
     z-index: -10;
     user-select: none; /* Prevents text selection */
     -webkit-user-drag: none; /* Prevents image drag in Safari and Chrome */
     -moz-user-select: none; /* Prevents image drag in Firefox */
     -ms-user-select: none; 
+}
+
+
+.header-back {
+    transition: fill 0.3s ease; /* Плавный переход заливки */
+  }
+  
+.scrolled .header-back {
+    fill: rgb(0, 0, 0); /* Цвет заливки при прокрутке */
+}
+  
+.scrolled {
+    color: rgb(0, 0, 0);
+}
+.header-back {
+    fill: rgb(255, 255, 255); /* Цвет заливки по умолчанию */
 }

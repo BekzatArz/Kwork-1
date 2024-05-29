@@ -23,7 +23,6 @@ nav a {
 }
 .navbar a {
     padding: 10px 15px;
-
 }
 
 .logo {
@@ -37,7 +36,6 @@ nav a {
 }
 .logosContain a {
     font-size: 28px;
-    
 }
 .sign-in {
     display: flex;
@@ -59,10 +57,12 @@ nav a {
 
 .sign-in a:hover {
     scale: 103%;
-    color: black;
-    transition: .3s;
+    color: rgb(0, 0, 0);
+    transition: ease-in .1s;
 }
-
+.scrolled .sign-in a:hover {
+  color: rgb(255, 255, 255);
+}
 .navbar{
   padding: 80px 20px;
   font-family: 'Open Sans Condensed', sans-serif;
@@ -88,8 +88,12 @@ nav a {
   padding: 4px 0;
 }
 .navbar a:hover {
-    color: #000000;
+    color: rgb(0, 0, 0);
 }
+.scrolled .navbar a:hover {
+  color: rgb(255, 255, 255);
+}
+
 .navbar a::before{
   content: "";
   width: 100%;
@@ -105,8 +109,11 @@ nav a {
 .navbar a:hover::before{
   transform: scale3d(1,1,1);
 }
+.scrolled .navbar a::before{
+    background: rgb(255, 255, 255);
+}
 .navbar a::before{
-    background: #000000;
+    background: rgb(0, 0, 0);
     transform-origin: 100% 50%;
 }
 .navbar a:hover::before{
@@ -114,6 +121,16 @@ nav a {
 }
 
 .active a {
-    color: #000000;
+    color: rgb(0, 0, 0);
+}
+.scrolled .active a {
+  color: rgb(255, 255, 255);
 }
 
+.logo p {
+    color: rgb(0, 0, 0); /* Используйте цвет по умолчанию */
+}
+
+.scrolled .logo p {
+    color: rgb(255, 255, 255); /* Измененный цвет при прокрутке */
+}
