@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+.welcome {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome__reg {
+    display: flex;
+    position: absolute;
+    right: 100px;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    font-family: "Passion One", "Open sans", sans-serif;
+    border-radius: 30px;
+    border: 6px solid white ;
+    color: white;
+    /* width: max-content; */
+    padding: 20px;
+}
+.welcome__reg p {
+    letter-spacing: 1px;
+}
+.welcome__reg h2 {
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.welcome__sign-in{
+    padding: 10px 30px;
+    font-size: 22px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}

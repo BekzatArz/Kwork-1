@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom'
-import '../styles/Footer/Footer.css'
+import '../../styles/Footer/Footer.css'
 
-import skype from '../assets/skype.svg'
-import telegram from '../assets/telegram.svg'
-import linkedIn from '../assets/linkedIn.svg'
+import skype from '../../assets/skype.svg'
+import telegram from '../../assets/telegram.svg'
+import linkedIn from '../../assets/linkedIn.svg'
+import email from '../../assets/email.svg'
 
 const Footer = () => {
   return (
@@ -31,11 +32,19 @@ const Footer = () => {
         </div>
         <div className="footer-socials">
             <div className="footer-socials-media">
-                <div className="social-">
-                </div>
-                <img src={skype} alt="skype" />
-                <img src={telegram} alt="telegram" />
-                <img src={linkedIn} alt="LinkedIn" />
+                <a href="skype:live:.cid.e6ef9e1c18a1fd69?chat">
+                    <img src={skype} alt="skype" width={45}/>
+                </a>
+                <a href="https://t.me/InhouseAd">
+                    <img src={telegram} alt="telegram" width={45}/>
+                </a>
+                <a href="https://www.linkedin.com/company/inhousead">
+                    <img src={linkedIn} alt="LinkedIn" width={45}/>
+                </a>
+            </div>
+            <div className="footer-socials-email">
+                <img src={email} alt="" />
+                <p>support@inhousead.net</p>
             </div>
         </div>
     </footer>
