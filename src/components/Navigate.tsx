@@ -30,7 +30,7 @@ const Navigate = () => {
         <motion.nav 
         initial={{ opacity: 0, scale: 1.3}}
         animate={{opacity: 1, scale: 1}}
-        transition={{delay: .5, duration: 1}}
+        transition={{delay: .9, duration: 1}}
         className={scrolled ? 'scrolled' : ''}> {/* Применение класса в зависимости от состояния прокрутки */}
             <div className="logosContain">
                 <NavLink to="/">

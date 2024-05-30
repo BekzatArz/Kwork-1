@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Open Sans Regular";
+    src: url('./fonts/open-sans-regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Open Sans Light";
+    src: url('./fonts/open-sans-light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Open Sans Condensed Light";
+    src: url('./fonts/open-sans-condensed-light2.ttf') format('truetype');
+}

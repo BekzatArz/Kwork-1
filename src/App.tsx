@@ -19,6 +19,7 @@ import HeaderBackground from './assets/HeaderBackground';
 
 const App = () => {
   const [scrolled, setScrolled] = useState<boolean> (false);
+  const [rendered, setRendered] = useState<boolean>(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,7 +34,8 @@ const App = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+
+  }, []); 
 
   return (
     <div className="box">
@@ -45,7 +47,7 @@ const App = () => {
         <div className="container">
         <Suspense fallback={<h2>Loading...</h2>}>
           <Routes>
-            <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home rendered={rendered} setRendered={setRendered}/>} />
             <Route path="/advertiser" element={<Advertiser />} />
             <Route path="/publisher" element={<Publisher />} />
             <Route path="/adformats" element={<AdFormats />} />

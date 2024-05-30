@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../../styles/Footer/Footer.css';
 
 import skype from '../../assets/skype.svg';
@@ -7,6 +7,17 @@ import linkedIn from '../../assets/linkedIn.svg';
 import email from '../../assets/email.svg';
 
 const Footer = () => {
+    const navigate = useNavigate()
+  const scrollToAboutUs = () => {
+    navigate('/'); // Переход на главную страницу
+
+    // Задержка, чтобы дождаться рендеринга главной страницы
+    setTimeout(() => {
+
+        window.scrollTo({top: 900, behavior: 'smooth'});
+        
+    }, 300); // Установите задержку, если необходимо
+  };
   return (
     <footer>
         <div className='footer-links'>
@@ -28,7 +39,7 @@ const Footer = () => {
                 Terms and Conditions
                 </div>
             </div>
-            <Link to='/'>About us</Link>
+            <Link to='/' onClick={scrollToAboutUs}>About us</Link>
         </div>
         <div className="footer-socials">
             <div className="footer-socials-media">

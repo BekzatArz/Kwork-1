@@ -1,7 +1,12 @@
 .background-white {
     z-index: -10;
     position: absolute;
-    top: 530px;
-    left: 0;
-    width: 100%;
+    height: max-content;
+    top: 450px;
+    left: -1px;
+    width: 100vw;  
+    user-select: none; /* Prevents text selection */
+    -webkit-user-drag: none; /* Prevents image drag in Safari and Chrome */
+    -moz-user-select: none; /* Prevents image drag in Firefox */
+    -ms-user-select: none; 
 }

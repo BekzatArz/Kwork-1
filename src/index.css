@@ -29,9 +29,10 @@ body{
 .container {
     display: flex;
     flex-direction: column;
-    max-width: 99vw;
+    width: 99vw;
     margin: 0 auto;
     margin-top: 100px;
+    position: relative;
 }
 
 .container button, .container a{
@@ -42,12 +43,7 @@ a {
     text-decoration: none;
     color: black;
 }
-html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
+
 
 .box {
     display: flex;
@@ -60,3 +56,9 @@ html, body {
     padding: 20px;
 }
 
+img {
+    user-select: none; /* Prevents text selection */
+    -webkit-user-drag: none; /* Prevents image drag in Safari and Chrome */
+    -moz-user-select: none; /* Prevents image drag in Firefox */
+    -ms-user-select: none; 
+}
