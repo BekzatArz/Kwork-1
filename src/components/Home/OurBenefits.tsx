@@ -25,7 +25,7 @@ const OurBenefits = () => {
                     <p className='our-contain__p'>Whether you're looking for text ads, graphical inpage, engaging native or something else, we have the right format for your campaign.</p>
                 </div>
                 <div className="our-contain__child">
-                    <img src={flexOptions} alt="targeting" width={150} />
+                    <img src={flexOptions} alt="targeting" className='child3' width={150} />
                     <h2 >Flexible customization options</h2>
                     <p className='our-contain__p'>We offer personalized solutions that meet your unique needs and budget.</p>
                 </div>

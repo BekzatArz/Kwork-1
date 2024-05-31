@@ -10,3 +10,69 @@
     -moz-user-select: none; /* Prevents image drag in Firefox */
     -ms-user-select: none; 
 }
+@media (max-width: 1750px) {
+  .background-white{
+    top: 410px;
+    width: 102vw;  
+  }
+}
+@media (max-width: 1680px) {
+    .background-white{
+        top: 340px;
+      }
+}
+@media (max-width: 1512px) {
+    .background-white{
+        top: 280px;
+      }
+}
+@media (max-width: 1400px) {
+    .background-white{
+        top: 280px;
+      }
+}
+
+@media (max-width: 1210px) {
+    .background-white {
+      width: 101vw;
+    } 
+}
+@media (max-width: 1130px) {
+  .background-white {
+    width: 103vw;
+  } 
+}
+@media (max-width: 1098px) {
+  .background-white {
+    width: 108vw;
+  } 
+}
+
+@media (max-width: 1040px) {
+  .background-white {
+    width: 114vw;
+  } 
+}
+
+@media (max-width: 1000px) {
+  .background-white {
+    width: 118vw;
+  } 
+}
+@media (max-width: 950px) {
+  .background-white {
+    top: 330px;
+  } 
+}
+
+@media (max-width: 916px) {
+  .background-white {
+    top: 380px;
+  } 
+}
+
+@media (max-width: 820px) {
+  .background-white {
+    top: 420px;
+  } 
+}

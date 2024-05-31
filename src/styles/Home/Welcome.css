@@ -46,7 +46,7 @@
     padding: 12px 25px;
     /* width: 300px; */
     font-family: "Passion One", sans-serif;
-    font-weight: 400;
+    font-weight: 700;
 }
 .welcome__inputs::placeholder{
     font-weight: 400;
@@ -108,12 +108,12 @@
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
-    top: -2px;
-    left:-2px;
+    top: -3px;
+    left:-3px;
     background-size: 400%;
     z-index: -1;
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
     animation: glowing 20s linear infinite;
     opacity: 1;
     transition: opacity .3s ease-in-out;
@@ -141,12 +141,163 @@
 
 .welcome__money {
     position: absolute;
-    top: 140px;
-    left: 680px;
+    top: 40px;
+    left: 640px;
+    /* display: none; */
 }
 
 .welcome .start-now__btn {
     position: absolute;
-    top:580px;
-    left: 600px;
+    top:640px;
+    left: 130px;
 }
+
+
+
+@media (max-width: 1850px) {
+    .welcome__money {
+        position: absolute;
+        top: -50px;
+        left: 680px;
+        width: 220px;
+    }
+    .welcome .start-now__btn{
+        top: 600px;
+    }
+}
+@media (max-width: 1750px) {
+    .welcome__reg {
+        scale: 1.1;
+        right: 50px;
+        margin-top: 100px;
+        margin-right: 180px;
+    }
+    .welcome__money {
+        position: absolute;
+        top: -20px;
+        left: 680px;
+        width: 200px;
+    }
+}
+@media (max-width: 1680px) {
+    .welcome__reg{
+        margin-right: 160px;
+    }
+    .welcome__h1{
+        margin-top: 80px;
+        margin-left: 70px;
+        font-size: 56px;
+    }
+    .welcome__money {
+        position: absolute;
+        top: 20px;
+        left: 600px;
+        width: 160px;
+    }
+    
+    .welcome .start-now__btn {
+        position: absolute;
+        top:500px;
+        font-size: 34px;
+        left: 100px;
+    }
+}
+@media (max-width: 1512px) {
+    .welcome__reg{
+        margin-right: 140px;
+        margin-top: 80px;
+    }
+    .welcome__h1{
+        margin-top: 80px;
+        margin-left: 70px;
+        line-height: 60px;
+        font-size: 50px;
+    }
+    .welcome__money {
+        top: 20px;
+        left: 500px;
+        width: 140px;
+    }
+    .welcome .start-now__btn{
+        top: 460px;
+        left: 100px;
+        font-size: 30px;
+        padding: 4px 40px;
+        max-height: 70px;
+    }
+}
+@media (max-width: 1400px) {
+    .welcome__reg{
+        margin-right: 60px;
+        margin-top: 10px;
+        scale: .9;
+    }
+    .welcome__h1{
+        margin-top: 40px;
+        margin-left: 100px;
+        line-height: 52px;
+        font-size: 42px;
+    }
+    .welcome__money {
+        top: 100px;
+        left: 190px;
+        width: 95px;
+    }
+    .welcome .start-now__btn{
+        top: 420px;
+        left: 130px;
+        font-size: 30px;
+        padding: 3px 35px;
+        max-height: 70px;
+    }
+}
+@media (max-width: 1130px) {
+    .welcome__reg{
+        margin-right: -20px;
+        margin-top: 10px;
+        scale: .9;
+    }
+    .welcome__h1{
+        margin-top: 30px;
+        margin-left: 50px;
+        line-height: 46px;
+        font-size: 42px;
+    }
+    .welcome__money {
+        display: none;
+    }
+    .welcome .start-now__btn{
+        top: 340px;
+        left: 80px;
+        font-size: 26px;
+        padding: 2px 32px;
+    }
+  }
+@media (max-width: 1000px) {
+    .welcome {
+        margin: 0 auto;
+        margin-bottom: 300px;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+    }
+    .welcome__reg{
+        position: relative;
+        margin: 0 auto;
+        margin-right: 140px;
+        margin-top: 100px;
+    }
+    .welcome__h1{
+        margin-top: 30px;
+        margin-left: 50px;
+        line-height: 76px;
+        font-size: 62px;
+        text-align: center;
+    }
+    .welcome .start-now__btn{
+        top: 940px;
+        left: 80px;
+        font-size: 26px;
+        padding: 2px 32px;
+    }
+  }

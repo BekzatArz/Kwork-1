@@ -8,7 +8,7 @@ import Background from '../assets/Background'
 import OurBenefits from '../components/Home/OurBenefits'
 import Formats from '../components/Formats'
 
-const Home:React.FC<{rendered: boolean, setRendered: Dispatch<SetStateAction<boolean>>}> = ({rendered, setRendered}) => {
+const Home:React.FC<{rendered: boolean, setRendered: Dispatch<SetStateAction<boolean>>, format: string, setFormat: Dispatch<SetStateAction<string>>}> = ({rendered, setRendered, format, setFormat}) => {
   useEffect(() => {
     setRendered(true)
   }, [])
@@ -18,7 +18,7 @@ const Home:React.FC<{rendered: boolean, setRendered: Dispatch<SetStateAction<boo
         <Welcome rendered={rendered}/>
         <OurInfo />
         <OurBenefits />
-        <Formats />
+        <Formats setFormat={setFormat} format={format}/>
     </>
   )
 }

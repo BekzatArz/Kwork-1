@@ -10,8 +10,10 @@ header {
     width: 100%;
 }
 .header-back {
+    top: -20px;
     position: absolute;
     left: 0;
+    right: 0;
     width: 100%;
     height: max-content;
     z-index: -10;
@@ -88,4 +90,65 @@ header {
 .black {
     background-color: black;
     color: white;
+}
+
+@media (max-width: 1750px) {
+    .header-back {
+        top: -10px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: max-content;
+        z-index: -10;
+        user-select: none; /* Prevents text selection */
+        -webkit-user-drag: none; /* Prevents image drag in Safari and Chrome */
+        -moz-user-select: none; /* Prevents image drag in Firefox */
+        -ms-user-select: none; 
+    }
+}
+@media (max-width: 1680px) {
+    .header-back {
+        top: -10px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 110%;
+        height: max-content;
+        z-index: -10;
+        user-select: none; /* Prevents text selection */
+        -webkit-user-drag: none; /* Prevents image drag in Safari and Chrome */
+        -moz-user-select: none; /* Prevents image drag in Firefox */
+        -ms-user-select: none; 
+    }
+}
+@media (max-width: 1512px) {
+    .header-back {
+        top: -10px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 120%;
+        height: max-content;
+        z-index: -10;
+        user-select: none; /* Prevents text selection */
+        -webkit-user-drag: none; /* Prevents image drag in Safari and Chrome */
+        -moz-user-select: none; /* Prevents image drag in Firefox */
+        -ms-user-select: none; 
+    }
+}
+@media (max-width: 1400px) {
+    .header-back {
+        top: -10px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 130%;
+        height: max-content;
+        z-index: -10;
+        user-select: none; /* Prevents text selection */
+        -webkit-user-drag: none; /* Prevents image drag in Safari and Chrome */
+        -moz-user-select: none; /* Prevents image drag in Firefox */
+        -ms-user-select: none; 
+    }
 }

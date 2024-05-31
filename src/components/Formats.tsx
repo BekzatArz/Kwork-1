@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { Dispatch, SetStateAction } from 'react'
 import '../styles/Formats.css'
 
 
@@ -8,8 +8,8 @@ type FormatText = string;
 type FormatTexts = {
     [key: string]: FormatText;
 };
-const Formats = () => {
-    const [format, setFormat] = useState('pop')
+const Formats:React.FC<{format: string, setFormat: Dispatch<SetStateAction<string>>}> = ({format, setFormat}) => {
+   
 
     const formatTexts:FormatTexts = {
         pop: 'POP advertising format is used to display advertising windows that appear in front of the user above or behind the content of the web page. This type of advertising can be presented as a pop-up window, a pop-under window, or similar forms. It is often used to draw attention to specific products, services, or promotions.',

@@ -19,3 +19,69 @@
     letter-spacing: .7px;
     line-height: 45px;
 }
+@media (max-width: 1750px) {
+    .our-info {
+        margin-top: 480px;
+    }
+    .our-info h1 {
+        font-size: 50px;
+        letter-spacing: 2.2px;
+    }
+    .our-info__who-we-are {
+        width: 1000px;
+        font-family: "Open Sans Condensed Light";
+        margin-top: 70px;
+        font-size: 30px;
+        letter-spacing: .6px;
+        line-height: 45px;
+    }
+}
+@media (max-width: 1680px) {
+   .our-info {
+        margin-top: 420px;
+    }
+    .our-info h1 {
+        font-size: 46px;
+        letter-spacing: 2.1px;
+    }
+    .our-info__who-we-are {
+        width: 880px;
+        margin-top: 60px;
+        font-size: 28px;
+        letter-spacing: .5px;
+        line-height: 42px;
+    }
+}
+@media (max-width: 1512px) {
+    .our-info {
+        margin-top: 400px;
+    }
+    .our-info h1 {
+        font-size: 40px;
+        letter-spacing: 1.6px;
+    }
+    .our-info__who-we-are {
+        width: 800px;
+        margin-top: 50px;
+        font-size: 24px;
+        letter-spacing: .4px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width: 1210px) {
+    .our-info {
+        margin-top: 400px;
+    }
+    .our-info h1 {
+        font-size: 32px;
+        letter-spacing: 1px;
+    }
+    .our-info__who-we-are {
+        width: 680px;
+        margin-top: 25px;
+        font-size: 22px;
+        letter-spacing: .3px;
+        line-height: 30px;
+    }
+}

@@ -38,7 +38,7 @@ const Welcome: React.FC<{rendered: boolean}> = ({rendered}) => {
     return (
         <motion.div className="welcome" initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: !rendered ? 1.6 : 0, duration: .8}} >
             <h1 className="welcome__h1">Boost Your Reach: Join Our <br /> Advertising Network<br /> Today!</h1>
-            <img src={money} width={130} className='welcome__money' alt="money"  />
+            <img src={money} width={200} className='welcome__money' alt="money"  />
             <button className='start-now__btn white'>Start Now!</button>
             <motion.div 
                 className='welcome__reg'

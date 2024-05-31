@@ -20,6 +20,7 @@ import HeaderBackground from './assets/HeaderBackground';
 const App = () => {
   const [scrolled, setScrolled] = useState<boolean> (false);
   const [rendered, setRendered] = useState<boolean>(false)
+  const [format, setFormat] = useState<string>('pop');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -47,7 +48,7 @@ const App = () => {
         <div className="container">
         <Suspense fallback={<h2>Loading...</h2>}>
           <Routes>
-          <Route path="/" element={<Home rendered={rendered} setRendered={setRendered}/>} />
+          <Route path="/" element={<Home setFormat={setFormat} format={format} rendered={rendered} setRendered={setRendered}/>} />
             <Route path="/advertiser" element={<Advertiser />} />
             <Route path="/publisher" element={<Publisher />} />
             <Route path="/adformats" element={<AdFormats />} />
@@ -58,7 +59,7 @@ const App = () => {
           </Routes>
           </Suspense>
         </div>
-        <Footer />
+        <Footer setFormat={setFormat} />
       </Router>
     </div>
   );
