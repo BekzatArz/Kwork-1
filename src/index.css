@@ -24,12 +24,13 @@ body{
 .box {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    position: relative;
+    /* height: 100vh; */
 }
 .container {
     display: flex;
     flex-direction: column;
-    width: 99vw;
+    width: 100vw;
     margin: 0 auto;
     margin-top: 100px;
     position: relative;

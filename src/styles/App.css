@@ -4,10 +4,11 @@ header {
     /* border-bottom: 3px solid white; */
     background-repeat: no-repeat;
     display: flex;
+    flex-wrap: wrap;
     z-index: 10;
     align-items: center;    
     position: fixed;
-    width: 100%;
+    width: 100vw;
 }
 .header-back {
     top: -20px;
@@ -52,7 +53,7 @@ header {
     display: inline-block;
 }
 
-.start-now__btn:hover {
+/* .start-now__btn:hover {
     cursor: pointer;
     transform: scale(105%);
     transition: .3s;
@@ -65,17 +66,17 @@ header {
     transition: 1s;
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
-    top: -12px; /* Смещаем на 6px вверх, чтобы градиентный border был чуть выше */
-    left:-12px; /* Смещаем на 6px влево, чтобы градиентный border был чуть левее */
+    top: -12px; 
+    left:-12px; 
     background-size: 400%;
     z-index: -1;
-    width: calc(100% + 24px); /* Увеличиваем ширину на 12px (6px слева и 6px справа) */
-    height: calc(100% + 24px); /* Увеличиваем высоту на 12px (6px сверху и 6px снизу) */
+    width: calc(100% + 24px); 
+    height: calc(100% + 24px); 
     animation: glowing 20s linear infinite;
     opacity: 1;
     transition: opacity .3s ease-in-out;
     border-radius: 20px;
-}
+} */
 
 
 @keyframes glowing {

@@ -13,6 +13,7 @@
 }
 .our-info__who-we-are {
     width: 1088px;
+    
     font-family: "Open Sans Condensed Light";
     margin-top: 80px;
     font-size: 34px;
@@ -28,7 +29,7 @@
         letter-spacing: 2.2px;
     }
     .our-info__who-we-are {
-        width: 1000px;
+        width: 100px;
         font-family: "Open Sans Condensed Light";
         margin-top: 70px;
         font-size: 30px;
@@ -79,6 +80,15 @@
     }
     .our-info__who-we-are {
         width: 680px;
+        margin-top: 25px;
+        font-size: 22px;
+        letter-spacing: .3px;
+        line-height: 30px;
+    }
+}
+@media (max-width: 450px) {
+    .our-info__who-we-are {
+        width: 180px;
         margin-top: 25px;
         font-size: 22px;
         letter-spacing: .3px;

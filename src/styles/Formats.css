@@ -13,6 +13,7 @@
 }
 .formats__btns {
     display: flex;
+    flex-wrap: wrap;
     gap: 70px;
 }
 .formats__btns button {
