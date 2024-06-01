@@ -1,16 +1,15 @@
 import { NavLink } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import { useEffect, useState } from "react"; // Добавлен useState
+import React, { Dispatch, SetStateAction, useEffect, useState } from "react"; // Добавлен useState
 import { motion } from 'framer-motion'
 
 import '../styles/Navigate.css';
 
 import logo from '../assets/logo.svg';
 
-const Navigate = () => {
+const Navigate:React.FC<{setOpen: Dispatch<SetStateAction<boolean>>, open: boolean}> = ({setOpen, open}) => {
     const location = useLocation();
     const [scrolled, setScrolled] = useState(false); // Состояние для отслеживания прокрутки страницы
-
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 0) {
@@ -31,7 +30,15 @@ const Navigate = () => {
         initial={{ opacity: 0, scale: 1.3}}
         animate={{opacity: 1, scale: 1}}
         transition={{delay: .9, duration: 1}}
-        className={scrolled ? 'scrolled' : ''}> {/* Применение класса в зависимости от состояния прокрутки */}
+        className={scrolled ? 'scrolled' : ''}>
+            <svg onClick={() => setOpen(!open)} className="navbar-svg" fill="#ffe500" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 455 455" xmlSpace="preserve"
+                    stroke="#ffe500" strokeWidth="3.6399999999999997"><g id="SVGRepo_bgCarrier"
+                    strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round"
+                    strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <rect y="312.5" width="455"
+                    height="30"></rect> <rect y="212.5" width="455" height="30"></rect> <rect y="112.5" width="455"
+                    height="30"></rect> </g> </g>
+            </svg>
             <div className="logosContain">
                 <NavLink to="/">
                     <div className="logo">

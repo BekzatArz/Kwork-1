@@ -3,13 +3,18 @@
     margin-top: 100px;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }  
 .our-benefits h1 {
     text-align: center;
+    letter-spacing: normal;
     color: #6A6969;
     font-family: "Open Sans Light";
     font-size: 50px;
     margin-bottom: 80px;
+}
+.our-benefits__slider{
+    display: none;
 }
 .our-benefits__contain {
     display: flex;
@@ -42,11 +47,11 @@
     font-weight: 100;
     font-size: 32px;
     margin-bottom: 10px;
-    color: #999999;
+    color: #6A6969;
 }
 .our-contain__p{
-    background-color: black;
-    color: white;
+    background-color: #ffe500;
+    color: #585858;
     font-family: "Open Sans Condensed Light";
     font-size: 23px;
     max-width: 311px;
@@ -87,6 +92,20 @@
         max-width: 300px;
         padding: 14px;
     }
+}
+.black {
+    background-color: #ffe500;
+    /* border:6px solid #000000; */
+    font-size: 39px;
+    color: rgb(116, 116, 116);
+
+}
+.black::before {
+    display: none;
+}
+.black:hover{
+    transition: .4s;
+    color: rgb(116, 116, 116);
 }
 @media (max-width: 1680px) {
   .our-benefits {
@@ -201,5 +220,49 @@
         font-size: 16px;
         max-width: 200px;
         padding: 10px;
+    }
+}
+@media (max-width: 1000px) {
+    .our-benefits {
+        margin-top: 90px;
+    }
+    .our-benefits button {
+        font-size: 24px;
+        padding: 4px 40px;
+        top: -40px;
+        
+    }  
+    .our-benefits h1 {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+    .our-contain1 {
+        gap: 40px;
+    }
+    .our-contain2 {
+        margin-top: 10px;
+        gap: 40px;
+    }
+    .our-contain__child h2 {
+        font-size: 20px;
+        margin-bottom: 3px;
+    }
+    .our-contain__p{
+        font-size: 16px;
+        max-width: 200px;
+        padding: 10px;
+    }
+}
+@media (max-width: 890px) {
+    .our-benefits__contain{
+        display: none;
+    }
+    .our-benefits__slider{
+        display: flex;
+        width: 80%;
+        margin: 0 auto
+    }
+    .our-benefits__slider .our-contain__child {
+        
     }
 }

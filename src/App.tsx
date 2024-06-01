@@ -1,5 +1,5 @@
 import { useEffect, useState, lazy, Suspense } from "react";
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { NavLink, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 const Home = lazy(() => import('./pages/Home'));
 const NotFound = lazy(() => import('./pages/NotFound'));
@@ -21,7 +21,7 @@ const App = () => {
   const [scrolled, setScrolled] = useState<boolean> (false);
   const [rendered, setRendered] = useState<boolean>(false)
   const [format, setFormat] = useState<string>('pop');
-
+  const [open, setOpen] = useState<boolean>(false)
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -42,7 +42,13 @@ const App = () => {
     <div className="box">
       <Router>
         <header className={scrolled ? 'scrolled' : ''}>
-          <Navigate />
+          <Navigate open={open} setOpen={setOpen} />
+          {open && <ul className="mini-bar">
+                    <li className={location.pathname === "/advertiser" ? "active" : ""}><NavLink to='advertiser' role="button"><span className="text">Advertiser</span></NavLink></li>
+                    <li className={location.pathname === "/publisher" ? "active" : ""}> <NavLink to='publisher' role="button"><span className="text">Publisher</span></NavLink></li>
+                    <li className={location.pathname === "/adformats" ? "active" : ""}><NavLink to='adformats' role="button"><span className="text">Ad Formats</span></NavLink></li>
+                    <li className={location.pathname === "/contactus" ? "active" : ""}><NavLink to='contactus' role="button"><span className="text">Contact us</span></NavLink></li>
+                </ul>}
           <HeaderBackground className="header-back" />
         </header>
         <div className="container">

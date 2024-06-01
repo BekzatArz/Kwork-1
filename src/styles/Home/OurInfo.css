@@ -8,49 +8,48 @@
     font-weight: 300;
 }
 .our-info h1 {
-    font-size: 55px;
+    font-size: 50px;
     letter-spacing: 2.6px;
 }
 .our-info__who-we-are {
-    width: 1088px;
-    
+    max-width: 1088px;
     font-family: "Open Sans Condensed Light";
-    margin-top: 80px;
-    font-size: 34px;
+    margin-top: 40px;
+    font-size: 26px;
     letter-spacing: .7px;
-    line-height: 45px;
+    line-height: px;
 }
 @media (max-width: 1750px) {
     .our-info {
-        margin-top: 480px;
-    }
-    .our-info h1 {
-        font-size: 50px;
-        letter-spacing: 2.2px;
-    }
-    .our-info__who-we-are {
-        width: 100px;
-        font-family: "Open Sans Condensed Light";
-        margin-top: 70px;
-        font-size: 30px;
-        letter-spacing: .6px;
-        line-height: 45px;
-    }
-}
-@media (max-width: 1680px) {
-   .our-info {
-        margin-top: 420px;
+        margin-top: 500px;
     }
     .our-info h1 {
         font-size: 46px;
-        letter-spacing: 2.1px;
+        letter-spacing: 1px;
     }
     .our-info__who-we-are {
-        width: 880px;
+        /* width: 100px; */
+        font-family: "Open Sans Condensed Light";
+        margin-top: 70px;
+        font-size: 25px;
+        letter-spacing: .1px;
+        line-height: 36px;
+    }
+}
+@media (max-width: 1680px) {
+    .our-info {
+        margin-top: 500px;
+    }
+    .our-info h1 {
+        font-size: 40px;
+        letter-spacing: 1px;
+    }
+    .our-info__who-we-are {
+        width: 900px;
         margin-top: 60px;
-        font-size: 28px;
-        letter-spacing: .5px;
-        line-height: 42px;
+        font-size: 22px;
+        letter-spacing: .2px;
+        line-height: 28px;
     }
 }
 @media (max-width: 1512px) {
@@ -86,9 +85,43 @@
         line-height: 30px;
     }
 }
+@media (max-width: 1000px) {
+    .our-info {
+        margin-top:80px;
+    }
+    .our-info h1 {
+        font-size: 32px;
+        letter-spacing: .7px;
+    }
+    .our-info__who-we-are {
+        width: 600px;
+        margin-top: 40px;
+        font-size: 28px;
+        letter-spacing: .3px;
+        line-height: 38px;
+    }
+}
+@media (max-width: 890px) {
+    .our-info{
+        margin-top: -90px;
+        width: 100%;
+        background-color: aliceblue;
+        padding: 40px 0;
+        border-radius: 50px;
+    }
+    .our-info__who-we-are{
+        margin: 0 auto;
+        
+    }
+}
+@media (max-width: 650px) {
+    .our-info__who-we-are{
+        width: auto;
+    }
+}
 @media (max-width: 450px) {
     .our-info__who-we-are {
-        width: 180px;
+        /* width: 180px; */
         margin-top: 25px;
         font-size: 22px;
         letter-spacing: .3px;

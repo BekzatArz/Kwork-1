@@ -44,6 +44,33 @@ const OurBenefits = () => {
                 </div>
             </div>
         </div>
+        <div className="our-benefits__slider">
+                <div className="our-contain__child">
+                    <img src={targeting} alt="targeting" width={100} />
+                    <h2 style={{marginTop: '20px'}}>Precise Targeting</h2>
+                    <p className='our-contain__p'>We provide powerful targeting tools that allow advertisers to reach their target audience with high precision.</p>
+                </div>
+                <div className="our-contain__child">
+                    <img src={varietyOfFormats} alt="targeting" width={100} />
+                    <h2 style={{marginTop: '35px'}}>Variety of formats:</h2>
+                    <p className='our-contain__p'>Whether you're looking for text ads, graphical inpage, engaging native or something else, we have the right format for your campaign.</p>
+                </div>
+                <div className="our-contain__child">
+                    <img src={flexOptions} alt="targeting" className='child3' width={150} />
+                    <h2 >Flexible customization options</h2>
+                    <p className='our-contain__p'>We offer personalized solutions that meet your unique needs and budget.</p>
+                </div>
+                <div className="our-contain__child">
+                    <img src={secure} alt="targeting" width={100} />
+                    <h2 style={{marginTop: '20px'}}>High Level of  Security</h2>
+                    <p className='our-contain__p'>We ensure protection against fraud and unwanted content, providing a safe and reliable environment for advertising campaigns.</p>
+                </div>
+                <div className="our-contain__child">
+                    <img src={support} alt="targeting" width={100} />
+                    <h2 style={{marginTop: '20px'}}>Customer support</h2>
+                    <p className='our-contain__p'>Our friendly and competent team is always ready to assist you with any questions and requests.</p>
+                </div>
+        </div>
     </div>
   )
 }

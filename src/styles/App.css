@@ -17,7 +17,7 @@ header {
     right: 0;
     width: 100%;
     height: max-content;
-    z-index: -10;
+    z-index: -100;
     user-select: none; /* Prevents text selection */
     -webkit-user-drag: none; /* Prevents image drag in Safari and Chrome */
     -moz-user-select: none; /* Prevents image drag in Firefox */
@@ -53,12 +53,13 @@ header {
     display: inline-block;
 }
 
-/* .start-now__btn:hover {
+.start-now__btn:hoverб.start-now__btn:active  {
     cursor: pointer;
     transform: scale(105%);
     transition: .3s;
-    color: white;
+    color: rgb(255, 255, 255);
 }
+
 
 .start-now__btn:before {
     color: white;
@@ -76,7 +77,7 @@ header {
     opacity: 1;
     transition: opacity .3s ease-in-out;
     border-radius: 20px;
-} */
+}
 
 
 @keyframes glowing {
@@ -92,7 +93,22 @@ header {
     background-color: black;
     color: white;
 }
-
+@media (hover: hover) {
+    .start-now__btn:hover {
+        cursor: pointer;
+        transform: scale(105%);
+        transition: .3s;
+        color: white;
+    }
+}
+@media (hover: none) {
+    .start-now__btn:active {
+        cursor: pointer;
+        transform: scale(105%);
+        transition: .3s;
+        color: white;
+    }
+}
 @media (max-width: 1750px) {
     .header-back {
         top: -10px;
@@ -145,6 +161,36 @@ header {
         left: 0;
         right: 0;
         width: 130%;
+        height: max-content;
+        z-index: -10;
+        user-select: none; /* Prevents text selection */
+        -webkit-user-drag: none; /* Prevents image drag in Safari and Chrome */
+        -moz-user-select: none; /* Prevents image drag in Firefox */
+        -ms-user-select: none; 
+    }
+}
+@media (max-width: 1000px) {
+    .header-back {
+        top: -10px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 160%;
+        height: max-content;
+        z-index: -10;
+        user-select: none; /* Prevents text selection */
+        -webkit-user-drag: none; /* Prevents image drag in Safari and Chrome */
+        -moz-user-select: none; /* Prevents image drag in Firefox */
+        -ms-user-select: none; 
+    }
+}
+@media (max-width: 890px) {
+    .header-back {
+        top: -10px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 360%;
         height: max-content;
         z-index: -10;
         user-select: none; /* Prevents text selection */

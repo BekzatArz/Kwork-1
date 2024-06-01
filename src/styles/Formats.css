@@ -1,6 +1,6 @@
 .formats {
     margin: 0 auto;
-    margin-top: 360px;
+    margin-top: 560px;
     margin-bottom: 100px;
 }
 .formats__h1 {
@@ -121,5 +121,18 @@
 @media (max-width: 1270px) {
     .formats {
         margin-top: 140px;
+    }
+}
+@media (max-width: 880px) {
+    .formats {
+        margin-top: 140px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .formats__btns{
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }

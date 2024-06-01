@@ -56,10 +56,10 @@ const Welcome: React.FC<{rendered: boolean}> = ({rendered}) => {
                         Monetize
                     </button>
                     <button 
-                        className={selectedOption === 'advertise' ? 'selected' : ''}
-                        onClick={() => handleOptionChange('advertise')}
+                        className={selectedOption === 'advertize' ? 'selected' : ''}
+                        onClick={() => handleOptionChange('advertize')}
                     >
-                        Advertise
+                        Advertize
                     </button>
                 </div>
                 <input 
