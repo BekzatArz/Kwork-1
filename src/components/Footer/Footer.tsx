@@ -72,7 +72,7 @@ const Footer:React.FC<{setFormat: Dispatch<SetStateAction<string>>}> = ({setForm
             </div>
         </div>
         <div className="footer-rights" style={{marginTop: '20px'}}>
-            <p>©. All rights reserved.<br />
+            <p style={{width: 'auto'}}>©. All rights reserved.<br />
 NAZARBUSINESS ADVERTISING LIMITED<br />
 Unit 2A, 17/F, Glenealy Tower, No.1 Glenealy, Central HKG, Hong Kong</p>
         </div>

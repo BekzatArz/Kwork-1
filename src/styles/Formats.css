@@ -136,3 +136,16 @@
         grid-template-columns: 1fr 1fr;
     }
 }
+@media (max-width: 440px) {
+    .formats {
+        margin-top: 140px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .formats__btns{
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+}

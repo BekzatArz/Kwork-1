@@ -180,3 +180,14 @@ nav a {
     display: none;
   }
 }
+@media (max-width: 440px) {
+  .logosContain a {
+    font-size: 18px;
+}
+.sign-in a:first-child {
+    display: none;
+  }
+  .logo{
+    align-items: center;
+  }
+}

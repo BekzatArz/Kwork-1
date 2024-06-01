@@ -186,3 +186,8 @@ footer {
         font-size: 12px;
     }
 }
+@media (max-width: 440px) {
+    .footer-links{
+        margin-left: 0;
+    }
+}
