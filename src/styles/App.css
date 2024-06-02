@@ -199,3 +199,6 @@ header {
         -ms-user-select: none; 
     }
 }
+@media (max-width: 440px) {
+    
+}

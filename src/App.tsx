@@ -54,8 +54,8 @@ const App = () => {
         <div className="container">
         <Suspense fallback={<h2>Loading...</h2>}>
           <Routes>
-          <Route path="/" element={<Home setFormat={setFormat} format={format} rendered={rendered} setRendered={setRendered}/>} />
-            <Route path="/advertiser" element={<Advertiser />} />
+            <Route path="/" element={<Home setFormat={setFormat} format={format} rendered={rendered} setRendered={setRendered}/>} />
+            <Route path="/advertiser" element={<Advertiser setFormat={setFormat} format={format} />} />
             <Route path="/publisher" element={<Publisher />} />
             <Route path="/adformats" element={<AdFormats />} />
             <Route path="/contactus" element={<ContactUs />} />

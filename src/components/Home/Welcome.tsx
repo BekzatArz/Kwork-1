@@ -3,8 +3,10 @@ import { motion, Variants } from 'framer-motion';
 
 import money from '../../assets/money.svg'
 import '../../styles/Home/Welcome.css';
+import { useNavigate } from 'react-router-dom';
 
 const Welcome: React.FC<{rendered: boolean}> = ({rendered}) => {
+    const navigate = useNavigate()
     const [name, setName] = useState<string>('');
     const [email, setEmail] = useState<string>('');
     const [selectedOption, setSelectedOption] = useState<string>('monetize');
@@ -39,7 +41,7 @@ const Welcome: React.FC<{rendered: boolean}> = ({rendered}) => {
         <motion.div className="welcome" initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: !rendered ? 1.6 : 0, duration: .8}} >
             <h1 className="welcome__h1">Boost Your Reach: Join Our <br /> Advertising Network<br /> Today!</h1>
             <img src={money} width={200} className='welcome__money' alt="money"  />
-            <button className='start-now__btn white'>Start Now!</button>
+            <button onClick={() => navigate('/signup')} className='start-now__btn white'>Start Now!</button>
             <motion.div 
                 className='welcome__reg'
                 initial="initial"

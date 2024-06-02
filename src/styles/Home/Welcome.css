@@ -150,7 +150,7 @@
 .welcome .start-now__btn {
     position: absolute;
     top:640px;
-    left: 130px;
+    left: 150px;
 }
 
 
@@ -330,5 +330,24 @@
         text-align: center;
     }
   }
+  
+  @media (max-width: 690px) {
+    .welcome__h1{
+        /* position: relative; */
+        margin-top: 40px;
+        margin-left: -0px;
+        line-height: 76px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .welcome .start-now__btn{
+        position: relative;
+        top: 10px;
+        left: 5px;
+        max-height: max-content;
+        font-size: 32px;
+        padding: 3px 26px 3px 26px;
+    }
+}
   
   
