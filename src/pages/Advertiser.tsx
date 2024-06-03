@@ -1,27 +1,36 @@
-import Connect from "../components/Advertiser/Connect"
-import OurAims from "../components/Advertiser/OurAims"
+import React, { useContext, useEffect } from "react";
+import Connect from "../components/Advertiser/Connect";
+import OurAims from "../components/Advertiser/OurAims";
+import Background2 from '../assets/Background2.svg';
+import '../styles/Advertiser/Advertiser.css';
+import Formats from "../components/Formats";
+import { RenderedContext } from "../pages/RenderedContext";
 
-import Background2 from '../assets/Background2.svg'
-import '../styles/Advertiser/Advertiser.css'
-import Formats from "../components/Formats"
-import React, { Dispatch, SetStateAction, useEffect } from "react"
-import { RenderedItem } from "./pagesRender"
+const Advertiser: React.FC<{ format: string, setFormat: React.Dispatch<React.SetStateAction<string>> }> = ({ format, setFormat }) => {
+  const context = useContext(RenderedContext);
 
-const Advertiser:React.FC<{format: string, setFormat: Dispatch<SetStateAction<string>>, rendered:RenderedItem, setRendered:Dispatch<SetStateAction<RenderedItem>>}> = ({format, setFormat, rendered, setRendered}) => {
+  if (!context) {
+    throw new Error("RenderedContext must be used within a RenderedProvider");
+  }
+
+  const { rendered, setRendered } = context;
+
   useEffect(() => {
-    console.log(rendered)
-    setTimeout(() => {
-      setRendered(prev => ({...prev, advertiser: true}))
-    }, 3000)
-  }, [])
+    if (!rendered.advertiser) {
+      setTimeout(() => {
+        setRendered((prev) => ({ ...prev, advertiser: true }));
+      }, 1000);
+    }
+  }, [rendered.advertiser, setRendered]);
+
   return (
     <>
       <img src={Background2} className="background2" alt="" />
-      <Connect rendered={rendered} />
+      <Connect />
       <OurAims />
-      <Formats setFormat={setFormat} format={format}/>
+      <Formats setFormat={setFormat} format={format} />
     </>
-  )
+  );
 }
 
-export default Advertiser
+export default Advertiser;

@@ -105,23 +105,27 @@
     .our-info{
         margin-top: -90px;
         width: 100%;
-        background-color: aliceblue;
+        /* background-color: aliceblue; */
         padding: 40px 0;
         border-radius: 50px;
     }
     .our-info__who-we-are{
         margin: 0 auto;
+        margin-top: 20px;
+        font-size: 24px;
         
     }
 }
 @media (max-width: 650px) {
+    .our-info h1 {
+    }
     .our-info__who-we-are{
-        width: auto;
+        width: 90%;
     }
 }
 @media (max-width: 450px) {
     .our-info__who-we-are {
-        /* width: 180px; */
+        width: 90%;
         margin-top: 25px;
         font-size: 22px;
         letter-spacing: .3px;

@@ -12,7 +12,9 @@
     background-image: linear-gradient(to right, #6702CC, #E80916);
     background-clip: text;
 }
-
+.iluha {
+    display: none;
+}
 .welcome__reg {
     display: flex;
     position: absolute;
@@ -292,6 +294,7 @@
         position: relative;
         margin-bottom: 300px;
     }
+    
     .welcome__reg{
         right: -0px;
         position: relative;
@@ -329,20 +332,23 @@
         font-size: 48px;
         text-align: center;
     }
+    .iluha {
+        display: inline;;
+    }
   }
   
   @media (max-width: 690px) {
     .welcome__h1{
         /* position: relative; */
-        margin-top: 40px;
+        margin-top: 10px;
         margin-left: -0px;
-        line-height: 76px;
+        line-height: 40px;
         font-size: 30px;
         text-align: center;
     }
     .welcome .start-now__btn{
         position: relative;
-        top: 10px;
+        top: 30px;
         left: 5px;
         max-height: max-content;
         font-size: 32px;

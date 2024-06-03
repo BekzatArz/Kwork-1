@@ -29,3 +29,19 @@
         top: 340px
     }
 }
+@media (max-width: 950px) {
+    .background2 {
+        width: 130%;
+    }
+}
+@media (max-width: 920px) {
+    .background2 {
+        width: 138%;
+    }
+}
+@media (max-width: 770px) {
+    .background2 {
+        /* width: 138%; */
+        display: none;
+    }
+}
