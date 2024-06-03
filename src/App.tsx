@@ -15,11 +15,12 @@ import './styles/App.css';
 import Navigate from "./components/Navigate";
 import Footer from "./components/Footer/Footer";
 
+import { RenderedItem } from "./pages/pagesRender";
 import HeaderBackground from './assets/HeaderBackground';
 
 const App = () => {
   const [scrolled, setScrolled] = useState<boolean> (false);
-  const [rendered, setRendered] = useState<boolean>(false)
+  const [rendered, setRendered] = useState<RenderedItem>({home: false, advertiser: false})
   const [format, setFormat] = useState<string>('pop');
   const [open, setOpen] = useState<boolean>(false)
   useEffect(() => {
@@ -55,7 +56,7 @@ const App = () => {
         <Suspense fallback={<h2>Loading...</h2>}>
           <Routes>
             <Route path="/" element={<Home setFormat={setFormat} format={format} rendered={rendered} setRendered={setRendered}/>} />
-            <Route path="/advertiser" element={<Advertiser setFormat={setFormat} format={format} />} />
+            <Route path="/advertiser" element={<Advertiser setFormat={setFormat} format={format} rendered={rendered} setRendered={setRendered} />} />
             <Route path="/publisher" element={<Publisher />} />
             <Route path="/adformats" element={<AdFormats />} />
             <Route path="/contactus" element={<ContactUs />} />

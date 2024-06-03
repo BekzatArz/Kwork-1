@@ -4,3 +4,28 @@
     z-index: -10;
     top: 580px;
 }
+@media (min-width: 1900px){
+    .background2 {
+        top: 640px;
+    }
+}
+@media (max-width: 1730px) {
+    .background2 {
+        top: 560px;
+    }
+}
+@media (max-width: 1610px) {
+    .background2 {
+        top: 530px;
+    }
+}
+@media (max-width: 1430px) {
+    .background2 {
+        top: 430px;
+    }
+}
+@media (max-width: 1300px) {
+    .background2 {
+        top: 340px
+    }
+}

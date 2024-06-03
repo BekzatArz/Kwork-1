@@ -24,9 +24,7 @@
     font-weight: 400;
     font-family: "Open Sans Condensed Light";
 }
-.connect a {
-    width: fit-content;
-}
+
 .connect img {
     width: 460px;
     position: absolute;
@@ -38,4 +36,227 @@
     margin-top: 140px;
     margin-left: 1100px;
     padding: 0 35px;
+}
+@media (max-width: 1900px){
+    .connect img {
+        width: 460px;
+        position: absolute;
+        top: 0;
+        right: 280px;
+        margin-left: 500px;
+    }
+    .connect button {
+        margin-top: 60px;
+        margin-left: 1000px;
+    } 
+}
+@media (max-width: 1800px){
+    .connect button {
+        margin-top: 90px;
+        margin-left: 940px;
+    }
+}
+@media (max-width: 1730px) {
+    .connect button {
+        margin-top: 80px;
+        margin-left: 900px;
+        font-size: 38px;
+    }
+}
+@media (max-width: 1690px){
+    .connect h1 {
+        margin-top: 89px;
+    }
+    .connect button {
+        margin-top: 80px;
+        margin-left: 850px;
+    }
+    .connect img {
+        width: 430px;
+        position: absolute;
+        top: 0;
+        right: 200px;
+        margin-left: 500px;
+    }
+}
+@media (max-width: 1610px) {
+    .connect button {
+        margin-top: 70px;
+        margin-left: 850px;
+    }
+}
+@media (max-width: 1540px){
+    .connect h1 {
+        width: 644px;
+        margin-top: 89px;
+        /* margin-right:410px; */
+        margin-left: 150px;
+        font-size: 40px;
+        font-family: "Open Sans Condensed";
+        color: transparent;
+        background-image: linear-gradient(to right, #6702CC, #E80916);
+        background-clip: text;
+    }
+    .connect img {
+        width: 410px;
+        position: absolute;
+        top: 40px;
+        right: 200px;
+        margin-left: 480px;
+    }
+    .connect button {
+        margin-top: 40px;
+        font-size: 34px;
+        margin-left: 850px;
+    }
+}
+@media (max-width: 1480px){
+    .connect button {
+        margin-top: 100px;
+        font-size: 34px;
+        margin-left: 800px;
+    }
+    .connect img {
+        width: 380px;
+        position: absolute;
+        top: 10px;
+        right: 200px;
+        margin-left: 480px;
+    }
+    .connect h1 {
+        width: 644px;
+        margin-top: 90px;
+        /* margin-right:410px; */
+        margin-left: 150px;
+        font-size: 34px;
+        font-family: "Open Sans Condensed";
+        color: transparent;
+        background-image: linear-gradient(to right, #6702CC, #E80916);
+        background-clip: text;
+    }
+    .connect h2 {
+        width: 480px;
+        margin-top: 30px;
+        margin-left: 150px;
+        font-size: 18px;
+        color: #7a7a7a;
+        font-weight: 400;
+        font-family: "Open Sans Condensed Light";
+    }
+}
+@media (max-width: 1430px) {
+    .connect img {
+        width: 370px;
+        position: absolute;
+        top: -10px;
+        right: 200px;
+        margin-left: 480px;
+    }
+    .connect button {
+        margin-top: 70px;
+        font-size: 34px;
+        margin-left: 750px;
+    }
+    .connect h1 {
+        width: 604px;
+        margin-top: 80px;
+        /* margin-right:410px; */
+        margin-left: 120px;
+        font-size: 30px;
+        font-family: "Open Sans Condensed";
+        color: transparent;
+        background-image: linear-gradient(to right, #6702CC, #E80916);
+        background-clip: text;
+    }
+    .connect h2 {
+        width: 420px;
+        margin-top: 30px;
+        margin-left: 120px;
+        font-size: 17px;
+        color: #7a7a7a;
+        font-weight: 400;
+        font-family: "Open Sans Condensed Light";
+    }
+}
+@media (max-width: 1360px){
+    .connect button {
+        margin-top: 60px;
+        font-size: 28px;
+        padding: 0 26px;
+        margin-left: 720px;
+    }
+    .connect img {
+        width: 340px;
+        position: absolute;
+        top: 10px;
+        right: 200px;
+        margin-left: 480px;
+    }
+}
+@media (max-width: 1300px){
+    .connect button {
+        margin-top: 70px;
+        font-size: 28px;
+        padding: 0 26px;
+        margin-left: 720px;
+    }
+    .connect img {
+        width: 330px;
+        position: absolute;
+        top: 20px;
+        right: 200px;
+        margin-left: 480px;
+    }
+    .connect h1 {
+        width: 604px;
+        margin-top: 70px;
+        /* margin-right:410px; */
+        margin-left: 120px;
+        font-size: 30px;
+        font-family: "Open Sans Condensed";
+        color: transparent;
+        background-image: linear-gradient(to right, #6702CC, #E80916);
+        background-clip: text;
+    }
+    .connect h2 {
+        width: 420px;
+        margin-top: 30px;
+        margin-left: 120px;
+        font-size: 17px;
+        color: #7a7a7a;
+        font-weight: 400;
+        font-family: "Open Sans Condensed Light";
+    }
+}
+@media (max-width: 1270px){
+    .connect button {
+        margin-top: 60px;
+        font-size: 24px;
+        padding: 0 26px;
+        margin-left: 690px;
+    }
+    .connect h1 {
+        width: 494px;
+        margin-top: 30px;
+        /* margin-right:410px; */
+        margin-left: 120px;
+        font-size: 26px;
+        font-family: "Open Sans Condensed";
+        color: transparent;
+        background-image: linear-gradient(to right, #6702CC, #E80916);
+        background-clip: text;
+    }
+    .connect h2 {
+        width: 420px;
+        margin-top: 30px;
+        margin-left: 120px;
+        font-size: 17px;
+        color: #7a7a7a;
+        font-weight: 400;
+        font-family: "Open Sans Condensed Light";
+    }
+    .connect img {
+        width: 300px;
+        top: -20px;
+    }
 }

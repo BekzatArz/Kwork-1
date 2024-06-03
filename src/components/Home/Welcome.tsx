@@ -4,8 +4,9 @@ import { motion, Variants } from 'framer-motion';
 import money from '../../assets/money.svg'
 import '../../styles/Home/Welcome.css';
 import { useNavigate } from 'react-router-dom';
+import { RenderedItem } from '../../pages/pagesRender';
 
-const Welcome: React.FC<{rendered: boolean}> = ({rendered}) => {
+const Welcome: React.FC<{rendered: RenderedItem}> = ({rendered}) => {
     const navigate = useNavigate()
     const [name, setName] = useState<string>('');
     const [email, setEmail] = useState<string>('');

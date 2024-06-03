@@ -1,16 +1,17 @@
 import React, { Dispatch, SetStateAction, useEffect } from 'react'
 import Welcome from '../components/Home/Welcome'
 import OurInfo from '../components/Home/OurInfo'
-
+import { RenderedItem } from './pagesRender'
 import '../styles/Home/Home.css'
 
 import Background from '../assets/Background'
 import OurBenefits from '../components/Home/OurBenefits'
 import Formats from '../components/Formats'
 
-const Home:React.FC<{rendered: boolean, setRendered: Dispatch<SetStateAction<boolean>>, format: string, setFormat: Dispatch<SetStateAction<string>>}> = ({rendered, setRendered, format, setFormat}) => {
+
+const Home:React.FC<{rendered: RenderedItem, setRendered: Dispatch<SetStateAction<RenderedItem>>, format: string, setFormat: Dispatch<SetStateAction<string>>}> = ({rendered, setRendered, format, setFormat}) => {
   useEffect(() => {
-    setRendered(true)
+    setRendered(prev => ({...prev, home: true}))
   }, [])
   return (
     <>
